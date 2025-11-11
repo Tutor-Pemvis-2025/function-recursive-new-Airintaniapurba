@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="TFUNC"/>
+        <attribute name="authors" value="Airin Tania"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-11 09:02:02 PM"/>
+        <attribute name="created" value="QWlyaW4gVGFuaWE7TEFQVE9QLTQyVkJSM0hWOzIwMjUtMTEtMTE7MDg6Mjc6NDIgUE07MzM1OA=="/>
+        <attribute name="edited" value="QWlyaW4gVGFuaWE7TEFQVE9QLTQyVkJSM0hWOzIwMjUtMTEtMTE7MDk6MDI6MDIgUE07MzszNDU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, hasil" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <output expression="&quot;Bilangan yang dimasukkan:&quot;&amp;n" newline="True"/>
+            <output expression="&quot;Hasil perhitungan rekursif:&quot;&amp;angka(n)" newline="True"/>
+        </body>
+    </function>
+    <function name="angka" type="Integer" variable="result">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <if expression="n==0">
+                <then>
+                    <assign variable="result" expression="0"/>
+                </then>
+                <else>
+                    <output expression="n&amp;&quot;+&quot;" newline="True"/>
+                    <assign variable="result" expression="n+angka(n-1)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
