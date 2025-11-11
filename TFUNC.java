@@ -7,11 +7,12 @@ public class TFUNC {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int n, hasil;
+        int n, result;
 
         n = Integer.parseInt(input.nextLine());
-        System.out.println("Bilangan yang dimasukkan:" + n);
-        System.out.println("Hasil perhitungan rekursif:" + angka(n));
+        result = angka(n);
+        System.out.println("Bilangan yang dimasukkan :" + n);
+        System.out.println("Hasil perhitungan rekursif :" + result);
     }
     
     public static int angka(int n) {
@@ -20,7 +21,6 @@ public class TFUNC {
         if (n == 0) {
             result = 0;
         } else {
-            System.out.println(Integer.toString(n) + "+");
             result = n + angka(n - 1);
         }
         
