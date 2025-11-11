@@ -11,8 +11,8 @@ public class TFUNC {
 
         n = Integer.parseInt(input.nextLine());
         result = angka(n);
-        System.out.println("Bilangan yang dimasukkan :" + n);
-        System.out.println("Hasil perhitungan rekursif :" + result);
+        System.out.println("Bilangan yang dimasukkan : " + n);
+        System.out.println("Hasil perhitungan rekursif : " + result);
     }
     
     public static int angka(int n) {
